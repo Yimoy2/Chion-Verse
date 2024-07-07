@@ -1,0 +1,258 @@
+:root {
+    background-color: #fdecff;
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: naikaifont, "FakePearl-Regular", "Noto Sans TC", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin-bottom: 2rem;
+    text-align: justify;
+    text-align-last: center;
+  }
+  
+  h1 {
+    font-size: 5.4rem;
+    font-style: semibold;
+    color: #a549ca;
+    margin-bottom: 5rem;
+  }
+  
+  h1 > span {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+    color: #a549ca;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    color: #a549ca;
+    font-weight: 500;
+  }
+  
+  /* UTILITIES */
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    padding: 1rem 0;
+  }
+
+
+  /* Default styles */
+img {
+  max-width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* Media query for devices wider than 600px */
+@media (min-width: 600px) {
+  img {
+    max-width: 500px; /* Fixed maximum width */
+  }
+}
+
+/* Media query for devices wider than 1200px */
+@media (min-width: 1200px) {
+  .max-width-img {
+    max-width: 800px; /* Different maximum width */
+  }
+}
+
+
+  /* BUTTONS */
+  
+  /* .btn {
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 29rem;
+    text-align: center;
+    border: 0.1rem solid #cd56eb;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #cd56eb;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 86, 210, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  } */
+
+  .rdn {
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 29rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #f9ddfc;
+  }
+  
+
+/* chatGPT
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+*/
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Specific styles for questions and choices */
+.question {
+  font-size: 4.2rem;
+  color: #a549ca;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  text-align: justify;
+  text-align-last: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+  width: 40rem;
+  text-align: center;
+  border: 0.1rem solid #cd56eb;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #cd56eb;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #DB87E4;
+  color: aliceblue;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 86, 210, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: naikaifont;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont-Regular.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+  }

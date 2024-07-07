@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>希翁的多重宇宙 Chion-Verse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-page" class="page flex-center flex-column">
+            <h1 class="title">希翁的多重宇宙</h1>
+            <button onclick="goToPage('first-text-page')">找出屬於你宇宙的希翁</button>
+            <a class="rdn" onclick="goToPage('random-page')">隨便</a>
+        </div>
+    
+        <!-- <div id="first-text-page" class="page hidden flex-center flex-column">
+            <h2 id="first-text" class="fade-in">你是vtuber希翁的老觀眾了，她那幽默風趣的瘋子直播風格，吸引你彷彿希毒上癮，無法自拔。某天，你發現直播中的希翁看起來雖然跟以往一樣，但卻給了你一種違和感。此時，你收到了來自希翁discord訊息...</h2>
+        </div> -->
+
+        <div id="first-text-page" class="page hidden flex-center flex-column">
+            <h2 id="first-text-1" class="fade-in">你是vtuber希翁的老觀眾了，她那幽默風趣的瘋子直播風格，吸引你彷彿希毒上癮，無法自拔。</h2>
+            <h2 id="first-text-2" class="hidden">某天，你發現直播中的希翁看起來雖然跟以往一樣，但卻給了你一種違和感。</h2>
+            <h2 id="first-text-3" class="hidden">此時，你收到了來自希翁discord訊息...</h2>
+        </div>
+
+        <div id="question-page" class="page hidden flex-center flex-column">
+            <div id="question-container" class="flex-center flex-column">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div id="second-text-page" class="page hidden flex-center flex-column">
+            <h2 id="second-text-1" class="fade-in">感謝你努力地找出屬於你宇宙的希翁</h2>
+            <h2 id="second-text-2" class="hidden">但是...</h2>
+            <h2 id="second-text-3" class="hidden">剛剛的選項都跟結果沒有關係喔 因為結果是隨機的啦！</h2>
+        </div>
+
+        <div id="random-page" class="page hidden flex-center flex-column">
+            <img src="/image/questionmark.gif">
+            <button class="btn" onclick="goToPage('end-page')">給我一個希翁</button>
+        </div>
+
+        <div id="end-page" class="page hidden flex-center flex-column">
+            <img id="random-image" src="" alt="Random Image">
+            <div>
+                <button onclick="goToPage('random-page')">再抽一次</button>
+                <button id="download-image">下載圖片</button>
+                <button id="external-link">讓我來補檔!</button>
+                <button onclick="goToPage('home-page')">回去主頁</button>
+            </div>
+            <div class="footer">
+                <h3>本測驗純屬娛樂，不代表V本人立場。<br>希望大家玩得開心！</h3>
+                <p>X: <a href="https://x.com/Yimoy2" target="_blank">@Yimoy2</a>  希翁的X: <a href="https://x.com/NKchion" target="_blank">@NKchion</a>  希翁的YT: <a href="https://www.youtube.com/@chionNK" target="_blank">希翁 / Chion Ch.</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
