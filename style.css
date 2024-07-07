@@ -24,7 +24,7 @@
   }
   
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-style: semibold;
     color: #a549ca;
     margin-bottom: 5rem;
@@ -36,7 +36,7 @@
   }
   
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #a549ca;
     margin-bottom: 3rem;
     font-weight: 700;
@@ -164,7 +164,7 @@ button {
   align-items: center;
   font-size: 2rem;
   padding: 1rem;
-  width: 70%; /* Ensure all buttons have the same width */
+  width: 80%; /* Ensure all buttons have the same width */
   max-width: 29rem; /* Optionally limit the maximum width */
   text-align: center;
   border: 0.1rem solid #cd56eb;
